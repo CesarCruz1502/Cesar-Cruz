@@ -1,0 +1,197 @@
+@import "../base/maps";
+@import "../base/_extend.scss";
+
+/*-------------MAIN-----Index----------------*/
+main {
+    background-image: url("../img/mainfondo4.jpg");
+    background-attachment: fixed;
+
+    /*-------------MAIN-----Carousel----------------*/
+    .mainCarousel {
+        width: 100%;
+        height: 600px;
+    }
+
+    /*-------------MAIN-----Card Juegos----------------*/
+    .subtitulo {
+        text-align: center;
+        margin: 30px;
+        color: white;
+    }
+
+    .juegos {
+        @extend %flex;
+
+        div {
+            width: 400px;
+            height: 400px;
+            border: 1px solid gainsboro;
+            margin: 20px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.664);
+            transition: 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .juegos {
+        div {
+            img {
+                width: 400px;
+                height: 300px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+            }
+
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
+            }
+        }
+    }
+
+    /*-------------MAIN-----Card Accesorios----------------*/
+    .accesorios {
+        @extend %flex;
+
+        div {
+            width: 400px;
+            height: 400px;
+            border: 1px solid gainsboro;
+            margin: 20px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.664);
+            transition: 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .accesorios {
+        div {
+            img {
+                width: 400px;
+                height: 300px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+            }
+
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
+            }
+        }
+    }
+
+    /*-------------MAIN-----Card membresias----------------*/
+    .membresias {
+        @extend %flex;
+
+        div {
+            width: 400px;
+            height: 400px;
+            border: 1px solid gainsboro;
+            margin: 20px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.664);
+            transition: 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .membresias {
+        div {
+            img {
+                width: 400px;
+                height: 300px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+            }
+
+            .boton {
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-texto);
+                text-decoration: map-get($boton , text-decoration);
+                border-radius: map-get($boton, radius-boton);
+            }
+        }
+    }
+
+    /*-------------MAIN-----Card Iframe----------------*/
+    iframe {
+        border-radius: 15px;
+    }
+
+    .video {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*-------------MAIN-----Page playstation----------------*/
+main {
+    .play {
+        div {
+            div {
+                div {
+                    img {
+                        width: 265px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    .titulo {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card {
+        transition: 2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    
+}
+
+/*-------------MAIN-----Page contacto y registro----------------*/
+.contacto {
+    padding: 20px;
+    color: white;
+}
