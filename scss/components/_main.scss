@@ -58,6 +58,7 @@ main {
                 color: map-get($boton, color-texto);
                 text-decoration: map-get($boton , text-decoration);
                 border-radius: map-get($boton, radius-boton);
+                padding: map-get($boton, pading);
             }
         }
     }
@@ -102,6 +103,7 @@ main {
                 color: map-get($boton, color-texto);
                 text-decoration: map-get($boton , text-decoration);
                 border-radius: map-get($boton, radius-boton);
+                padding: map-get($boton, pading);
             }
         }
     }
@@ -145,6 +147,7 @@ main {
                 color: map-get($boton, color-texto);
                 text-decoration: map-get($boton , text-decoration);
                 border-radius: map-get($boton, radius-boton);
+                padding: map-get($boton, pading);
             }
         }
     }
@@ -189,7 +192,12 @@ main {
         }
     }
 
-    
+    .boton-compra{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 /*-------------MAIN-----Page contacto y registro----------------*/
